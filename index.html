@@ -26,7 +26,7 @@
       <header class="topbar">
         <div>
           <p class="eyebrow">Patient Support Workspace</p>
-          <h1>Patient Overview Demo</h1>
+          <h1>Patient Overview</h1>
         </div>
         <span class="status-pill">Care plan active</span>
       </header>
@@ -70,47 +70,29 @@
         </article>
       </section>
 
-      <section id="scenario" class="scenario hidden" aria-live="polite">
-        <div class="scenario-header">
-          <div>
-            <p class="eyebrow">Scenario 01</p>
-            <h2>How would you respond?</h2>
-          </div>
-          <button id="closeBtn" class="ghost-btn">Close</button>
-        </div>
+      <!-- 🩷 DEVLIN AI CONVERSATION START 🩷 -->
 
-        <p class="patient-quote">
-          Maya: “I’ve already missed two appointments. I don’t think this is working for me.”
-        </p>
+<section id="devlinSection" class="scenario hidden">
+  <div class="scenario-header">
+    <div>
+      <p class="eyebrow">AI Patient Simulation</p>
+      <h2>Conversation with Jane</h2>
+    </div>
 
-        <div class="choices">
-          <button class="choice" data-score="1">
-            “You need to attend your appointments or the program can’t work.”
-          </button>
-          <button class="choice" data-score="3">
-            “I’m sorry this has been frustrating. What has been making the appointments hardest to get to?”
-          </button>
-          <button class="choice" data-score="2">
-            “I can reschedule the appointment for you right now.”
-          </button>
-        </div>
+    <button id="closeBtn" class="ghost-btn">Close</button>
+  </div>
 
-        <div id="feedback" class="feedback hidden">
-          <p class="eyebrow">Navigator feedback</p>
-          <h3 id="feedbackTitle"></h3>
-          <p id="feedbackText"></p>
+  <iframe
+    src="https://devlin.ai/embed/37a0626d74d0d94b59fdf7c26ce0eb3d?mode=embedded"
+    width="100%"
+    height="700"
+    style="border: 0; border-radius: 12px;"
+    allow="microphone"
+    title="Devlin AI Patient Simulation">
+  </iframe>
+</section>
 
-          <div class="next-actions">
-            <h4>Recommended next actions</h4>
-            <label><input type="checkbox" checked disabled> Document transportation barrier</label>
-            <label><input type="checkbox" checked disabled> Explore transportation resources</label>
-            <label><input type="checkbox" checked disabled> Reschedule follow-up visit</label>
-            <label><input type="checkbox" checked disabled> Set a patient check-in reminder</label>
-          </div>
-
-          <button id="resetBtn" class="secondary-btn">Try another response</button>
-        </div>
-      </section>
+<!-- 🩷 DEVLIN AI CONVERSATION END 🩷 -->
     </main>
   </div>
 
